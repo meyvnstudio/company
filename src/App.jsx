@@ -1,43 +1,30 @@
-import { useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-
+import React from "react";
 import "./App.css";
-
-import ScrollProgress from "./components/Scrollbar";
-
-import Layout from "./components/Layout";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./component/Layout";
 import Homepage from "./pages/Homepage";
-import Academy from "./pages/Academy";
-import Contact from "./pages/Contact";
-import Resources from "./pages/Resources";
-import Articles from "./pages/Articles";
-import Services from "./pages/Services";
-import Shop from "./pages/Shop";
-import Works from "./pages/Works";
-import PageNotFound from "./pages/PageNotFound";
+import Servicepage from "./pages/Servicepage";
+import CaseStudies from "./pages/Portfolio";
+import Errorpage from "./pages/Error";
 
-function App() {
+const App = () => {
   return (
     <>
-      <ScrollProgress />
-
       <BrowserRouter>
         <Routes>
           <Route path="" element={<Layout />}>
             <Route index element={<Homepage />} />
-            {/* <Route path="academy" element={<Academy />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="resources" element={<Resources />} />
-            <Route path="articles" element={<Articles />} />
-            <Route path="services" element={<Services />} />
-            <Route path="shop" element={<Shop />} />
-            <Route path="portfolio" element={<Works />} /> */}
-            <Route path="*" element={<Homepage />} />
+            <Route path="products" element={<Homepage />} />
+            <Route path="services" element={<Servicepage />} />
+            <Route path="case-studies" element={<CaseStudies />} />
+            <Route path="resources" element={<Servicepage />} />
+            <Route path="who-we-are" element={<Servicepage />} />
+            <Route path="*" element={<Errorpage />} />
           </Route>
         </Routes>
       </BrowserRouter>
     </>
   );
-}
+};
 
 export default App;

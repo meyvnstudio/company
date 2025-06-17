@@ -1,6 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  font-style: normal;
   box-sizing: border-box;
-  font-family: "Parkinsans", serif;
+  scroll-behavior: smooth;
+  font-optical-sizing: auto;
+  font-family: "Syne", sans-serif;
 }

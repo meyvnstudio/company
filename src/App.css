@@ -1,20 +1,60 @@
-@import "./assets/styles/global.scss";
-
 ::-webkit-scrollbar {
   width: 0;
 }
 
-/* ========== Global Styles ========== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+::selection {
+  background: #1c1e26;
+  color: #3a7afe;
 }
 
-html,
 body {
-  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  background: white;
+  font-size: 1rem;
 }
 
+a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
 
+button,
+input,
+select,
+textarea {
+  display: flex;
+  outline: none;
+  border: 1px solid;
+  align-items: center;
+  background: transparent;
+}
+
+span {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+p {
+  font-size: 1rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/* REUSABLE */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}

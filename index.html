@@ -1,130 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Character Set & Favicon -->
+    <!-- Character Encoding & Favicon -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/images/brand/favicon.svg" />
-    <link rel="icon" type="image/svg+xml" href="/images/brand/favicon.svg" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/images/brand/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/images/brand/favicon-192x192.png"
+      href="/images/brand/32.svg"
     />
     <link rel="shortcut icon" href="/images/brand/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/images/brand/favicon.svg" />
 
-    <!-- Mobile & Display Optimization -->
+    <!-- Viewport & Theme -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0B2530" />
-    <meta name="msapplication-TileColor" content="#0B2530" />
+    <meta name="theme-color" content="#3a7afe" />
+    <meta name="msapplication-TileColor" content="#3a7afe" />
 
-    <!-- SEO Essentials -->
-    <title>Meyvn Agency ⊶ Innovate. Design. Build. Scale.</title>
+    <!-- Primary Meta Tags -->
+    <title>Kampus Agency — Design. Build. Scale.</title>
     <meta
       name="description"
-      content="Meyvn Agency is a digital powerhouse specializing in software development, UI/UX design, branding, and digital marketing. We craft innovative solutions that elevate businesses and drive success."
+      content="Kampus Agency is a tech-forward digital company that builds tailored solutions through software, product design, and deep tech innovation. Let’s solve real problems together."
     />
-    <link rel="canonical" href="https://meyvnagency.online/" />
-
-    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
     <meta
-      property="og:title"
-      content="Meyvn Agency ⊶ Innovate. Design. Build. Scale."
+      name="keywords"
+      content="Kampus Agency, software development, product design, mobile apps, UI UX, web app, IT consulting, tutoring, tech academy, Rwanda"
     />
+    <meta name="author" content="Kampus Agency ↠ Iwmvictor" />
+    <link rel="canonical" href="https://kampusagency.vercel.app/" />
+
+    <!-- GEO Tags -->
+    <meta name="geo.region" content="RW" />
+    <meta name="geo.placename" content="Rwanda" />
+    <meta name="geo.position" content="-1.9499;30.0588" />
+    <meta name="ICBM" content="-1.9499, 30.0588" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kampus Agency — Design. Build. Scale." />
     <meta
       property="og:description"
-      content="Empowering brands with innovative software, cutting-edge design, and impactful digital marketing strategies. Let's create digital excellence together."
+      content="From complex challenges to scalable products, we use design and technology to help startups and companies succeed."
     />
     <meta
       property="og:image"
-      content="https://meyvnagency.online/images/og-image.png"
+      content="https://kampusagency.vercel.app/images/brand/og-image.png"
     />
-    <meta property="og:url" content="https://meyvnagency.online/" />
+    <meta property="og:url" content="https://kampusagency.vercel.app/" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Meyvn Agency" />
     <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Kampus Agency" />
 
-    <!-- Twitter Card -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Meyvn Agency ⊶ Innovate. Design. Build. Scale."
+      content="Kampus Agency — Design. Build. Scale."
     />
     <meta
       name="twitter:description"
-      content="Empowering brands with innovative software, cutting-edge design, and impactful digital marketing strategies."
+      content="Software development. Product design. Digital strategy. We help you innovate, build, and scale."
     />
     <meta
       name="twitter:image"
-      content="https://meyvnagency.online/images/og-image.png"
+      content="https://kampusagency.vercel.app/images/og-image.png"
     />
-    <meta name="twitter:site" content="@meyvnagency" />
-
-    <!-- Facebook Domain Verification -->
-    <meta
-      name="facebook-domain-verification"
-      content="YOUR_FB_VERIFICATION_CODE"
-    />
-
-    <!-- Additional SEO Meta Tags -->
-    <meta name="robots" content="index, follow" />
-    <meta
-      name="keywords"
-      content="software development, UI/UX design, branding, digital marketing, web development, creative agency, startup solutions, business growth, Rwanda, Meyvn Agency"
-    />
-    <meta name="author" content="Meyvn Agency ↠ Iwmvictor" />
+    <meta name="twitter:site" content="@kampusagency" />
 
     <!-- Alternate Language Versions -->
-    <link rel="alternate" hreflang="en" href="https://meyvnagency.online/" />
-    <link rel="alternate" hreflang="fr" href="https://meyvnagency.online/fr/" />
+    <link rel="alternate" hreflang="en" href="https://kampusagency.vercel.app/" />
+    <link rel="alternate" hreflang="fr" href="https://kampusagency.vercel.app/fr/" />
 
-    <!-- Google Verification -->
+    <!-- Google Verification (replace with real code) -->
     <meta
       name="google-site-verification"
       content="YOUR_GOOGLE_VERIFICATION_CODE"
     />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap"
-      rel="stylesheet"
+    <!-- Facebook Domain Verification (replace) -->
+    <meta
+      name="facebook-domain-verification"
+      content="YOUR_FB_VERIFICATION_CODE"
     />
 
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-TTRNWKZR");
-    </script>
-
-    <!-- JSON-LD Structured Data -->
+    <!-- Schema.org / JSON-LD Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "Meyvn Agency",
-        "url": "https://meyvnagency.online",
-        "logo": "https://meyvnagency.online/images/brand/favicon.svg",
+        "name": "Kampus Agency",
+        "url": "https://kampusagency.vercel.app",
+        "logo": "https://kampusagency.vercel.app/images/brand/logo.svg",
         "sameAs": [
-          "https://www.facebook.com/meyvnagency",
-          "https://twitter.com/meyvnagency",
-          "https://www.linkedin.com/company/meyvn-agency",
-          "https://www.instagram.com/meyvnagency"
+          "https://www.facebook.com/kampusagency",
+          "https://x.com/kampusagency",
+          "https://www.linkedin.com/company/kampusagency",
+          "https://www.instagram.com/kampusagency"
         ],
         "contactPoint": {
           "@type": "ContactPoint",
@@ -134,69 +105,54 @@
         "founder": {
           "@type": "Person",
           "name": "Iwmvictor",
-          "sameAs": "https://iwmvictor.vercel.app/"
+          "url": "https://iwmvictor.vercel.app/"
         },
         "service": [
           {
             "@type": "Service",
-            "name": "Software Development",
-            "provider": {
-              "@type": "Organization",
-              "name": "Meyvn Agency"
-            }
+            "name": "Software Development"
           },
           {
             "@type": "Service",
-            "name": "UI/UX Design",
-            "provider": {
-              "@type": "Organization",
-              "name": "Meyvn Agency"
-            }
+            "name": "Product Design"
           },
           {
             "@type": "Service",
-            "name": "Product Design",
-            "provider": {
-              "@type": "Organization",
-              "name": "Meyvn Agency"
-            }
+            "name": "Mobile & Web App Development"
           },
           {
             "@type": "Service",
-            "name": "Branding & Identity Design",
-            "provider": {
-              "@type": "Organization",
-              "name": "Meyvn Agency"
-            }
+            "name": "IT Consultancy & Tutoring"
           },
           {
             "@type": "Service",
-            "name": "Web Development",
-            "provider": {
-              "@type": "Organization",
-              "name": "Meyvn Agency"
-            }
-          },
-          {
-            "@type": "Service",
-            "name": "Digital Marketing",
-            "provider": {
-              "@type": "Organization",
-              "name": "Meyvn Agency"
-            }
+            "name": "UI/UX & Graphic Design"
           }
         ]
       }
     </script>
 
-    <!-- PWA & Apple Touch Icons -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Fonts (Satoshi) -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap"
+    /> -->
+
+    <!-- PWA + Manifest -->
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <meta name="theme-color" content="#0B2530" />
-    <meta name="msapplication-TileColor" content="#0B2530" />
+    <link rel="apple-touch-icon" href="/images/brand/icon.svg" />
+    <meta name="msapplication-TileColor" content="#3a7afe" />
     <meta name="msapplication-config" content="/browserconfig.xml" />
 
-    <!-- SITEMAP -->
+    <!-- Sitemap -->
     <link
       rel="sitemap"
       type="application/xml"
@@ -207,9 +163,9 @@
 
   <body>
     <div id="root">
-      <noscript>
-        Please enable JavaScript to view this website properly.
-      </noscript>
+      <noscript
+        >Please enable JavaScript to view this website properly.</noscript
+      >
     </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
