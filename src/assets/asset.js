@@ -11,20 +11,22 @@ import figmaIcon from "/icons/IconFigmaInverse.webp";
 import webIcon from "/icons/IconGlobalInverse.webp";
 import productIcon from "/icons/IconCustomInverse.webp";
 
-// blogs 
-import blog1 from '/images/blogs/1.jpg'
-import blog2 from '/images/blogs/2.jpg'
-import blog3 from '/images/blogs/3.jpg'
-import blog4 from '/images/blogs/4.webp'
-import blog5 from '/images/blogs/5.webp'
-import blog6 from '/images/blogs/6.jpg'
+// blogs
+import blog1 from "/images/blogs/1.jpg";
+import blog2 from "/images/blogs/2.jpg";
+import blog3 from "/images/blogs/3.jpg";
+import blog4 from "/images/blogs/4.webp";
+import blog5 from "/images/blogs/5.webp";
+import blog6 from "/images/blogs/6.jpg";
 
+import board from "/images/img/board.svg";
 
 export const assets = {
   video_bg,
 
   icons: {
     clutch,
+    board,
     figma: figmaIcon,
     startup: startIcon,
     managed: webIcon,
@@ -72,6 +74,7 @@ export const projects = [
     title: "DJC Electronics Ltd",
     isFeatured: true,
     thumbnail: djc,
+    group: "client",
     client: {
       name: "DJC Electronics Ltd",
       description:
@@ -109,6 +112,7 @@ export const projects = [
     title: "Adriel Homes",
     isFeatured: false,
     thumbnail: adriel,
+    group: "client",
     client: {
       name: "Adriel Homes",
       description:
@@ -139,6 +143,7 @@ export const projects = [
     title: "Inzozi Tours and Airticketing",
     isFeatured: false,
     thumbnail: inzozi,
+    group: "client",
     client: {
       name: "Inzozi Tours",
       description:
@@ -170,6 +175,7 @@ export const projects = [
     title: "Kingdom Real Estate",
     isFeatured: true,
     thumbnail: kingdom,
+    group: "client",
     client: {
       name: "Kingdom Real Estate",
       description:
@@ -217,6 +223,7 @@ export const projects = [
     title: "Klein Transports & Tours",
     isFeatured: true,
     thumbnail: klein,
+    group: "client",
     client: {
       name: "Klein Transports & Tours",
       description:
@@ -264,6 +271,7 @@ export const projects = [
     title: "Majoro Care Act Ltd (MCA)",
     isFeatured: false,
     thumbnail: mca,
+    group: "client",
     client: {
       name: "Majoro Care Act Ltd",
       description:
@@ -308,6 +316,7 @@ export const projects = [
     title: "MCA Tour",
     isFeatured: false,
     thumbnail: mcatour,
+    group: "client",
     client: {
       name: "MCA Tour",
       description:
@@ -347,6 +356,7 @@ export const projects = [
     title: "Hilly Agency",
     isFeatured: true,
     thumbnail: events,
+    group: "client",
     client: {
       name: "Hilly Agency",
       description:
@@ -799,7 +809,7 @@ import { v4 as uuid } from "uuid";
 
 export const blogs = [
   {
-    id: uuid(), 
+    id: uuid(),
     title: "Why Every Startup Needs a Design System",
     slug: "why-every-startup-needs-design-system",
     category: "Product Design",
@@ -835,7 +845,7 @@ export const blogs = [
       "From basic websites to custom platforms, explore the current price landscape for web development in Rwanda.",
     content: `<p>Web development prices in Rwanda vary based on features, platform, team expertise, and scope. Simple landing pages can cost from 150,000 RWF to 400,000 RWF, while custom e-commerce or apps may range from 1M to 5M RWF or more...</p>`,
     media: {
-      coverImage:blog2,
+      coverImage: blog2,
       images: [],
     },
     relatedPosts: [
@@ -954,5 +964,149 @@ export const blogs = [
       "2dc5c88b-fa37-4879-9101-89b9c1a87824", // Web Dev Cost
       "57d7a373-e0f2-4376-9888-76ad1669d9a7", // Choosing the Right Dev Company
     ],
+  },
+];
+
+import prod1a from "/images/products/0000.webp";
+import prod1b from "/images/products/001.webp";
+import prod1c from "/images/products/002.webp";
+import prod1d from "/images/products/003.webp";
+import prod2a from "/images/products/111.webp";
+import prod2b from "/images/products/112.webp";
+import prod2c from "/images/products/113.webp";
+import prod2d from "/images/products/114.webp";
+import prod2e from "/images/products/115.webp";
+import prod2f from "/images/products/116.webp";
+import prod2g from "/images/products/1100.webp";
+import prod3a from "/images/products/221.mp4";
+import prod3b from "/images/products/222.webp";
+import prod3c from "/images/products/223.webp";
+import prod4a from "/images/products/330.webp";
+import prod4b from "/images/products/331.webp";
+import prod4d from "/images/products/333.webp";
+import prod4e from "/images/products/334.webp";
+import prod4f from "/images/products/335.webp";
+import prod4c from "/images/products/336.webp";
+
+export const products = [
+  {
+    id: uuid(),
+    title: "Smart Home System",
+    overview: `
+      <p>We helped design and prototype a smart home system that connects with IoT sensors to allow landlords and tenants to monitor property conditions in real-time.</p>
+      <p>It integrates with existing hardware, provides proactive alerts, and generates usage analytics for cost-saving suggestions.</p>
+    `,
+    industry: "PropTech",
+    duration: "2 Weeks",
+    statedAt: 1738667236865,
+    team: {
+      lead: "Iwmvictor",
+      teams: ["Marketing Team", "UX Team"],
+    },
+    problem: `
+      <p>Landlords lacked a centralized tool to monitor multiple properties with security or environmental sensors.</p>
+    `,
+    result: `
+      <p>We delivered a high-fidelity prototype enabling fast MVP development. Client reported 20% reduction in monitoring overhead within the first month of beta testing.</p>
+    `,
+    url: "",
+    embedded: {
+      behance: "https://www.behance.net/embed/project/227628853?ilo0=1",
+    },
+    media: {
+      coverImage: prod1a,
+      images: [prod1a, prod1b, prod1c, prod1d],
+      videos: [],
+    },
+  },
+
+  {
+    id: uuid(),
+    title: "Profit-First SaaS Platform",
+    overview: `
+      <p>A full SaaS transformation of complex Excel-based workflows into an intelligent business platform that enables team collaboration, client invoicing, and real-time financial tracking.</p>
+    `,
+    industry: "SaaS / FinTech",
+    duration: "5 Weeks",
+    statedAt: 1738667242000,
+    team: {
+      lead: "Iwmvictor",
+      teams: ["Product Design", "Engineering"],
+    },
+    problem: `
+      <p>The client was manually handling operational workflows in Excel, which caused versioning issues, data errors, and lack of collaboration visibility.</p>
+    `,
+    result: `
+      <p>The new product automates over 80% of previously manual tasks, reducing admin time by 60%. Platform supports 20+ active team members with real-time dashboards.</p>
+    `,
+    url: "",
+    embedded: {
+      behance: "https://www.behance.net/embed/project/227628954?ilo0=1",
+    },
+    media: {
+      coverImage: prod2a,
+      images: [prod2a, prod2b, prod2c, prod2d, prod2e, prod2f, prod2g],
+      videos: [],
+    },
+  },
+
+  {
+    id: uuid(),
+    title: "Dairy Logistics Dashboard",
+    overview: `
+      <p>We designed a role-based dashboard system for dairy companies to manage and optimize logistics from farms to distribution centers.</p>
+    `,
+    industry: "Agritech / Logistics",
+    duration: "3 Weeks",
+    statedAt: 1738667253000,
+    team: {
+      lead: "Iwmvictor",
+      teams: ["UX Team", "Analytics"],
+    },
+    problem: `
+      <p>The company needed visibility into operations and performance of logistics, including vehicle tracking, collection volumes, and team coordination.</p>
+    `,
+    result: `
+      <p>Built and deployed a dashboard with automated reports, reducing dispatch errors by 40% and improving delivery tracking by 60%.</p>
+    `,
+    url: "",
+    embedded: {
+      behance: "https://www.behance.net/embed/project/227628955?ilo0=1",
+    },
+    media: {
+      coverImage: prod3b,
+      images: [prod3b, prod3c],
+      videos: [prod3a],
+    },
+  },
+
+  {
+    id: uuid(),
+    title: "Real Estate Platform",
+    overview: `
+      <p>A modern real estate listing and management system designed for agents, agencies, and property seekers across Rwanda.</p>
+    `,
+    industry: "Real Estate",
+    duration: "4 Weeks",
+    statedAt: 1738667261000,
+    team: {
+      lead: "Iwmvictor",
+      teams: ["UI/UX Design", "Frontend Dev"],
+    },
+    problem: `
+      <p>Users faced outdated platforms, slow search experience, and no mobile optimization. Agents lacked analytics and listing performance tracking.</p>
+    `,
+    result: `
+      <p>The redesigned platform improved property discovery rates, enabled mobile use, and introduced analytics features for agencies to track performance.</p>
+    `,
+    url: "",
+    embedded: {
+      behance: "https://www.behance.net/embed/project/227628956?ilo0=1",
+    },
+    media: {
+      coverImage: prod4a,
+      images: [prod4a, prod4b, prod4c, prod4d, prod4e, prod4f],
+      videos: [],
+    },
   },
 ];
